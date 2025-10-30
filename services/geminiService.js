@@ -69,7 +69,7 @@ export async function analyzeClothingImages(base64Images) {
       const result = JSON.parse(response.text);
       const validCategories = ["Hauts", "Bas", "Chaussures", "Accessoires"];
       
-      (result.items).forEach(item => {
+      result.items.forEach(item => {
           if (!validCategories.includes(item.category)) {
               console.warn(`Catégorie invalide reçue de l'IA: ${item.category}, fallback sur "Accessoires"`);
               item.category = "Accessoires";
