@@ -44,9 +44,12 @@
   }
 }
 </script>
+<!-- Ajout de Babel pour la transpilation du JSX dans le navigateur -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./index.js"></script>
+    <!-- Changement du type pour que Babel traite ce script -->
+    <script type="text/babel" src="./index.js"></script>
   </body>
 </html>
