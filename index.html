@@ -14,9 +14,9 @@
             colors: {
               'gold': '#D4AF37',
               'gold-dark': '#b89b34',
-              'onyx': '#111111', // Fond principal en mode sombre
-              'raisin-black': '#1a1a1a', // Cartes en mode sombre
-              'snow': '#FBFBFB', // Fond principal en mode clair
+              'onyx': '#111111',
+              'raisin-black': '#1a1a1a',
+              'snow': '#FBFBFB',
             },
             fontFamily: {
               'sans': ['Inter', 'sans-serif'],
@@ -34,23 +34,9 @@
         font-family: 'Inter', sans-serif;
       }
     </style>
-
-<!-- Ajout de Babel pour la transpilation du JSX dans le navigateur -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
+    <script type="module" crossorigin src="/Dresscode-AI-V2/assets/index-Cd29Fe7r.js"></script>
+  </head>
   <body>
     <div id="root"></div>
-    <!-- Changement du src pour pointer vers le point d'entrée JavaScript (jsx) -->
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
-  }
-}
-</script>
-    <script type="text/babel" data-type="module" src="./index.jsx"></script>
   </body>
 </html>
