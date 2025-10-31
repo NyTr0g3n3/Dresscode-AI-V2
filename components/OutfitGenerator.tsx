@@ -1,5 +1,5 @@
 import React from 'react';
-import { SparklesIcon } from './icons';
+import { SparklesIcon } from './icons.tsx';
 
 interface OutfitGeneratorProps {
   onGenerate: (context: string) => void;

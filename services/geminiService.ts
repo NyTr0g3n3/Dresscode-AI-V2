@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import type { ClothingItem, OutfitSuggestion, Category, ClothingSet, VacationPlan } from '../types';
+import type { ClothingItem, OutfitSuggestion, Category, ClothingSet, VacationPlan } from '../types.ts';
 
 if (!process.env.API_KEY) {
     throw new Error("Clé API manquante. Veuillez la configurer dans vos variables d'environnement.");

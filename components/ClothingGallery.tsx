@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import type { ClothingItem as ClothingItemType, ClothingSet, Category } from '../types';
-import { RemoveIcon, WardrobeIcon, TshirtIcon, PantIcon, ShoeIcon, AccessoryIcon, ChevronDownIcon, CheckCircleIcon, LinkIcon, UnlinkIcon } from './icons';
+import type { ClothingItem as ClothingItemType, ClothingSet, Category } from '../types.ts';
+import { RemoveIcon, WardrobeIcon, TshirtIcon, PantIcon, ShoeIcon, AccessoryIcon, ChevronDownIcon, CheckCircleIcon, LinkIcon, UnlinkIcon } from './icons.tsx';
 
 interface CardProps {
   imageSrc: string;

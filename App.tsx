@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import type { ClothingItem, OutfitSuggestion, ClothingSet, VacationPlan } from './types';
-import { analyzeClothingImages, generateOutfits, generateVacationPlan } from './services/geminiService';
-import Header from './components/Header';
-import ClothingUpload from './components/ClothingUpload';
-import ClothingGallery from './components/ClothingGallery';
-import OutfitGenerator from './components/OutfitGenerator';
-import OutfitDisplay from './components/OutfitDisplay';
-import ClothingDetailModal from './components/ClothingDetailModal';
-import { LoadingSpinner } from './components/icons';
-import VacationPlanner from './components/VacationPlanner';
-import VacationResultDisplay from './components/VacationResultDisplay';
+import type { ClothingItem, OutfitSuggestion, ClothingSet, VacationPlan } from './types.ts';
+import { analyzeClothingImages, generateOutfits, generateVacationPlan } from './services/geminiService.ts';
+import Header from './components/Header.tsx';
+import ClothingUpload from './components/ClothingUpload.tsx';
+import ClothingGallery from './components/ClothingGallery.tsx';
+import OutfitGenerator from './components/OutfitGenerator.tsx';
+import OutfitDisplay from './components/OutfitDisplay.tsx';
+import ClothingDetailModal from './components/ClothingDetailModal.tsx';
+import { LoadingSpinner } from './components/icons.tsx';
+import VacationPlanner from './components/VacationPlanner.tsx';
+import VacationResultDisplay from './components/VacationResultDisplay.tsx';
 
 
 const App: React.FC = () => {

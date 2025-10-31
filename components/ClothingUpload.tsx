@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { CameraIcon, LoadingSpinner, RemoveIcon, SparklesIcon } from './icons';
+import { CameraIcon, LoadingSpinner, RemoveIcon, SparklesIcon } from './icons.tsx';
 
 interface ClothingUploadProps {
   onAnalyze: (files: File[]) => void;

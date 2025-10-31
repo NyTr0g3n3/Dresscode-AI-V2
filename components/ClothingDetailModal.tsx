@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import type { ClothingItem, ClothingSet, Category } from '../types';
-import { XIcon, SparklesIcon, UnlinkIcon } from './icons';
+import type { ClothingItem, ClothingSet, Category } from '../types.ts';
+import { XIcon, SparklesIcon, UnlinkIcon } from './icons.tsx';
 
 interface ClothingDetailModalProps {
   item: ClothingItem;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import type { OutfitSuggestion, ClothingItem } from '../types';
-import { QuestionMarkIcon, XIcon } from './icons';
+import type { OutfitSuggestion, ClothingItem } from '../types.ts';
+import { QuestionMarkIcon, XIcon } from './icons.tsx';
 
 interface OutfitDisplayProps {
   outfits: OutfitSuggestion[];

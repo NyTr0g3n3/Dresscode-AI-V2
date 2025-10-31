@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SuitcaseIcon } from './icons';
+import { SuitcaseIcon } from './icons.tsx';
 
 interface VacationPlannerProps {
   onGenerate: (days: number, context: string) => void;

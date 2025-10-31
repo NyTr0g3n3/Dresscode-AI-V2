@@ -1,6 +1,6 @@
 import React from 'react';
-import type { VacationPlan, ClothingItem } from '../types';
-import { QuestionMarkIcon } from './icons';
+import type { VacationPlan, ClothingItem } from '../types.ts';
+import { QuestionMarkIcon } from './icons.tsx';
 
 interface VacationResultDisplayProps {
   plan: VacationPlan;
