@@ -23,7 +23,7 @@ const ClothingUpload = ({ onAnalyze, isAnalyzing }) => {
 
 
   const addFilesToStage = (files) => {
-      const newStagedFiles = files.map(file => ({
+      const newStagedFiles = Array.from(files).map(file => ({
           id: `${file.name}-${file.lastModified}-${Math.random()}`,
           file,
           preview: URL.createObjectURL(file)
@@ -33,7 +33,7 @@ const ClothingUpload = ({ onAnalyze, isAnalyzing }) => {
 
   const handleFileChange = (event) => {
     if (event.target.files) {
-      addFilesToStage(Array.from(event.target.files));
+      addFilesToStage(event.target.files);
       event.target.value = ''; // Reset file input
     }
   };
@@ -69,7 +69,7 @@ const ClothingUpload = ({ onAnalyze, isAnalyzing }) => {
     e.stopPropagation();
     setIsDragging(false);
     if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-      addFilesToStage(Array.from(e.dataTransfer.files));
+      addFilesToStage(e.dataTransfer.files);
       e.dataTransfer.clearData();
     }
   };
